@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Link Copier</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h2"/></svg>
+      </div>
+      <div><h1 data-i18n="appName">Shopping Link Copier</h1><p data-i18n="appSubtitle">Copy product title and clean URL in one click</p></div>
+      <span class="version" id="version">1.0.0</span>
+    </header>
+
+    <section class="section">
+      <h2 data-i18n="generalSettings">General</h2>
+      <div class="setting-row">
+        <div><label for="floatingEnabled" data-i18n="floatingEnabled">Show floating button</label><p data-i18n="floatingEnabledDesc">Show a copy button on supported product pages.</p></div>
+        <label class="switch"><input id="floatingEnabled" type="checkbox"><span></span></label>
+      </div>
+      <div class="setting-row">
+        <div><label data-i18n="floatingPosition">Floating button position</label><p data-i18n="floatingPositionDesc">Drag the button on a product page. Its position is saved automatically.</p></div>
+        <button id="resetPosition" class="secondary" data-i18n="resetPosition">Reset position</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 data-i18n="copySettings">Copy settings</h2>
+      <div class="setting-row">
+        <div><label for="showNotification" data-i18n="showNotification">Show copy confirmation</label><p data-i18n="showNotificationDesc">Display a short message after a successful copy.</p></div>
+        <label class="switch"><input id="showNotification" type="checkbox"><span></span></label>
+      </div>
+      <div class="setting-row">
+        <div><label for="notificationDuration" data-i18n="notificationDuration">Confirmation duration</label><p data-i18n="notificationDurationDesc">How long the confirmation stays visible.</p></div>
+        <select id="notificationDuration">
+          <option value="1000" data-i18n="oneSecond">1 second</option>
+          <option value="2000" data-i18n="twoSeconds">2 seconds</option>
+          <option value="3000" data-i18n="threeSeconds">3 seconds</option>
+          <option value="5000" data-i18n="fiveSeconds">5 seconds</option>
+        </select>
+      </div>
+      <div class="setting-row">
+        <div><label for="includeStoreSource" data-i18n="includeStoreSource">Add store source to title</label><p data-i18n="includeStoreSourceDesc">Prefix the product title with the store name. Enabled by default.</p></div>
+        <label class="switch"><input id="includeStoreSource" type="checkbox"><span></span></label>
+      </div>
+      <div class="setting-row">
+        <div><label for="appendBlankLines" data-i18n="appendBlankLines">Add blank lines after copied URL</label><p data-i18n="appendBlankLinesDesc">Append two line breaks after the URL. Enabled by default.</p></div>
+        <label class="switch"><input id="appendBlankLines" type="checkbox"><span></span></label>
+      </div>
+      <div class="format-preview"><span data-i18n="copyFormat">Copy format</span><pre>[Store name] Product title
+https://example.com/product/123</pre></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading"><div><h2 data-i18n="supportedWebsites">Supported websites</h2><p data-i18n="websitesDesc">Enable or disable each website independently.</p></div></div>
+      <div id="websiteList" class="website-list"></div>
+    </section>
+
+
+    <footer class="footer">
+      <div><strong data-i18n="appName">Shopping Link Copier</strong><span> · <span data-i18n="version">Version</span> <span id="footerVersion">1.0.0</span></span></div>
+      <div><span data-i18n="developer">Developer</span>: 7mentori · <a href="https://github.com/7mentori/Shopping-Link-Copier" target="_blank" rel="noreferrer">GitHub</a></div>
+    </footer>
+    <div id="savedMessage" class="saved-message" role="status" aria-live="polite"></div>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>

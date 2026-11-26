@@ -1,0 +1,12 @@
+const fs = require('fs');
+const vm = require('vm');
+const assert = require('assert');
+const context = { URL, location: { href: 'https://www.ruten.com.tw/item/22543230235382/' }, document: { querySelector: () => null }, globalThis: null };
+context.globalThis = context;
+vm.createContext(context);
+vm.runInContext(fs.readFileSync(__dirname + '/../core/siteDetector.js', 'utf8'), context);
+const site = context.SLC.getSite(context.location.href);
+assert.strictEqual(site.id, 'ruten');
+assert.strictEqual(context.SLC.isProductPage(site, context.location.href), true);
+assert.strictEqual(context.SLC.isProductPage(site, 'https://www.ruten.com.tw/'), false);
+console.log('Ruten site detection tests passed.');

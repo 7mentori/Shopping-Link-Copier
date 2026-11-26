@@ -1,0 +1,131 @@
+{
+  "extName": {
+    "message": "購物商品連結一鍵複製器"
+  },
+  "extDescription": {
+    "message": "一鍵複製商品標題與乾淨商品網址。"
+  },
+  "actionTitle": {
+    "message": "複製商品標題與網址"
+  },
+  "commandCopy": {
+    "message": "複製商品標題與網址"
+  },
+  "floatingButtonTitle": {
+    "message": "複製商品標題與網址"
+  },
+  "unsupportedPage": {
+    "message": "目前網站尚未支援"
+  },
+  "appName": {
+    "message": "購物商品連結一鍵複製器"
+  },
+  "appSubtitle": {
+    "message": "一鍵複製商品標題與乾淨網址"
+  },
+  "generalSettings": {
+    "message": "一般設定"
+  },
+  "floatingEnabled": {
+    "message": "顯示網頁浮動按鈕"
+  },
+  "floatingEnabledDesc": {
+    "message": "在支援的商品頁面顯示複製按鈕。"
+  },
+  "floatingPosition": {
+    "message": "浮動按鈕位置"
+  },
+  "floatingPositionDesc": {
+    "message": "可在商品頁面拖曳按鈕，位置會自動保存。"
+  },
+  "resetPosition": {
+    "message": "恢復預設位置"
+  },
+  "copySettings": {
+    "message": "複製設定"
+  },
+  "showNotification": {
+    "message": "顯示複製成功提示"
+  },
+  "showNotificationDesc": {
+    "message": "成功複製後顯示短暫提示。"
+  },
+  "notificationDuration": {
+    "message": "提示顯示時間"
+  },
+  "notificationDurationDesc": {
+    "message": "設定成功提示停留的時間。"
+  },
+  "oneSecond": {
+    "message": "1 秒"
+  },
+  "twoSeconds": {
+    "message": "2 秒"
+  },
+  "threeSeconds": {
+    "message": "3 秒"
+  },
+  "fiveSeconds": {
+    "message": "5 秒"
+  },
+  "copyFormat": {
+    "message": "複製格式"
+  },
+  "supportedWebsites": {
+    "message": "支援網站"
+  },
+  "websitesDesc": {
+    "message": "可以個別啟用或停用各購物網站。"
+  },
+  "version": {
+    "message": "版本"
+  },
+  "developer": {
+    "message": "開發者"
+  },
+  "settingsSaved": {
+    "message": "設定已儲存"
+  },
+  "websitePchome": {
+    "message": "PChome 24h"
+  },
+  "websiteMomo": {
+    "message": "momo 購物網"
+  },
+  "websiteShopee": {
+    "message": "蝦皮購物"
+  },
+  "websiteYahoo": {
+    "message": "Yahoo 購物中心"
+  },
+  "websiteBooks": {
+    "message": "博客來"
+  },
+  "websiteEslite": {
+    "message": "誠品線上"
+  },
+  "websiteEtmall": {
+    "message": "東森購物"
+  },
+  "websiteCoupang": {
+    "message": "Coupang 酷澎"
+  },
+  "appendBlankLines": {
+    "message": "複製後在網址後加上空白行"
+  },
+  "appendBlankLinesDesc": {
+    "message": "開啟後會在網址後增加兩個換行字元，預設開啟。"
+  },
+  "websiteTrplus": {
+    "message": "特力屋"
+  },
+  "includeStoreSource": {
+    "message": "在商品標題前加上商店來源"
+  },
+  "includeStoreSourceDesc": {
+    "message": "在商品標題前加上商店名稱，例如 [PChome 24h購物]，預設開啟。"
+  },
+  "websiteRuten": {
+    "message": "露天拍賣"
+  }
+}

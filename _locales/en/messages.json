@@ -1,0 +1,131 @@
+{
+  "extName": {
+    "message": "Shopping Link Copier"
+  },
+  "extDescription": {
+    "message": "Copy a product title and clean product URL in one click."
+  },
+  "actionTitle": {
+    "message": "Copy product title and URL"
+  },
+  "commandCopy": {
+    "message": "Copy product title and URL"
+  },
+  "floatingButtonTitle": {
+    "message": "Copy product title and URL"
+  },
+  "unsupportedPage": {
+    "message": "Website not supported"
+  },
+  "appName": {
+    "message": "Shopping Link Copier"
+  },
+  "appSubtitle": {
+    "message": "Copy product title and clean URL in one click"
+  },
+  "generalSettings": {
+    "message": "General"
+  },
+  "floatingEnabled": {
+    "message": "Show floating button"
+  },
+  "floatingEnabledDesc": {
+    "message": "Show a copy button on supported product pages."
+  },
+  "floatingPosition": {
+    "message": "Floating button position"
+  },
+  "floatingPositionDesc": {
+    "message": "Drag the button on a product page. Its position is saved automatically."
+  },
+  "resetPosition": {
+    "message": "Reset position"
+  },
+  "copySettings": {
+    "message": "Copy settings"
+  },
+  "showNotification": {
+    "message": "Show copy confirmation"
+  },
+  "showNotificationDesc": {
+    "message": "Display a short message after a successful copy."
+  },
+  "notificationDuration": {
+    "message": "Confirmation duration"
+  },
+  "notificationDurationDesc": {
+    "message": "How long the confirmation stays visible."
+  },
+  "oneSecond": {
+    "message": "1 second"
+  },
+  "twoSeconds": {
+    "message": "2 seconds"
+  },
+  "threeSeconds": {
+    "message": "3 seconds"
+  },
+  "fiveSeconds": {
+    "message": "5 seconds"
+  },
+  "copyFormat": {
+    "message": "Copy format"
+  },
+  "supportedWebsites": {
+    "message": "Supported websites"
+  },
+  "websitesDesc": {
+    "message": "Enable or disable each website independently."
+  },
+  "version": {
+    "message": "Version"
+  },
+  "developer": {
+    "message": "Developer"
+  },
+  "settingsSaved": {
+    "message": "Settings saved"
+  },
+  "websitePchome": {
+    "message": "PChome 24h"
+  },
+  "websiteMomo": {
+    "message": "momo Shopping"
+  },
+  "websiteShopee": {
+    "message": "Shopee Taiwan"
+  },
+  "websiteYahoo": {
+    "message": "Yahoo Shopping Taiwan"
+  },
+  "websiteBooks": {
+    "message": "Books.com.tw"
+  },
+  "websiteEslite": {
+    "message": "Eslite Online"
+  },
+  "websiteEtmall": {
+    "message": "ETMall"
+  },
+  "websiteCoupang": {
+    "message": "Coupang Taiwan"
+  },
+  "appendBlankLines": {
+    "message": "Add blank lines after copied URL"
+  },
+  "appendBlankLinesDesc": {
+    "message": "Append two line breaks after the URL. Enabled by default."
+  },
+  "websiteTrplus": {
+    "message": "TRPLUS"
+  },
+  "includeStoreSource": {
+    "message": "Add store source before product title"
+  },
+  "includeStoreSourceDesc": {
+    "message": "Prefix the product title with the store name, for example [PChome 24h]. Enabled by default."
+  },
+  "websiteRuten": {
+    "message": "Ruten Marketplace"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDescription__",
+  "version": "1.0.0",
+  "default_locale": "en",
+  "minimum_chrome_version": "102",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "https://24h.pchome.com.tw/*",
+    "https://*.momoshop.com.tw/*",
+    "https://*.shopee.tw/*",
+    "https://tw.buy.yahoo.com/*",
+    "https://*.books.com.tw/*",
+    "https://*.eslite.com/*",
+    "https://*.etmall.com.tw/*",
+    "https://*.coupang.com.tw/*",
+    "https://tw.coupang.com/*",
+    "https://*.trplus.com.tw/*",
+    "https://*.tw.coupang.com/*",
+    "https://*.ruten.com.tw/*"
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "action": {
+    "default_title": "__MSG_actionTitle__",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_page": "options/options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://24h.pchome.com.tw/*",
+        "https://*.momoshop.com.tw/*",
+        "https://*.shopee.tw/*",
+        "https://tw.buy.yahoo.com/*",
+        "https://*.books.com.tw/*",
+        "https://*.eslite.com/*",
+        "https://*.etmall.com.tw/*",
+        "https://*.coupang.com.tw/*",
+        "https://tw.coupang.com/*",
+        "https://*.trplus.com.tw/*",
+        "https://*.tw.coupang.com/*",
+        "https://*.ruten.com.tw/*"
+      ],
+      "js": [
+        "core/siteDetector.js",
+        "core/urlNormalizer.js",
+        "core/titleExtractor.js",
+        "parsers/pchomeParser.js",
+        "parsers/momoParser.js",
+        "parsers/shopeeParser.js",
+        "parsers/yahooParser.js",
+        "parsers/booksParser.js",
+        "parsers/esliteParser.js",
+        "parsers/etmallParser.js",
+        "parsers/coupangParser.js",
+        "parsers/trplusParser.js",
+        "parsers/rutenParser.js",
+        "core/productResolver.js",
+        "content/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
